@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Conrad&#39;s Website</title>
+    <link>http://conrads.website/index.xml</link>
+    <description>Recent content on Conrad&#39;s Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 05 May 2018 16:25:58 -0700</lastBuildDate>
+    <atom:link href="http://conrads.website/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Chatter</title>
+      <link>http://conrads.website/poems/chatter/</link>
+      <pubDate>Sat, 05 May 2018 16:25:58 -0700</pubDate>
+      
+      <guid>http://conrads.website/poems/chatter/</guid>
+      <description>&lt;p&gt;Digital chit chatter&lt;br /&gt;
+Wired rant and banter&lt;br /&gt;
+A conflict comes&lt;br /&gt;
+A conflict goes&lt;br /&gt;
+And my solution arrives after&lt;/p&gt;
+
+&lt;p&gt;Digital chit chatter&lt;br /&gt;
+On ideas that don&amp;rsquo;t matter&lt;br /&gt;
+A thought crosses my mind&lt;br /&gt;
+And here it will hide&lt;br /&gt;
+To stay forever after&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

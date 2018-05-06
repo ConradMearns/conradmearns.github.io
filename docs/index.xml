@@ -6,8 +6,95 @@
     <description>Recent content on Conrad&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 May 2018 17:02:44 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 05 May 2018 17:06:01 -0700</lastBuildDate>
     <atom:link href="http://conrads.website/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>About &#39;Conrad Mearns&#39;</title>
+      <link>http://conrads.website/about/</link>
+      <pubDate>Sat, 05 May 2018 17:06:01 -0700</pubDate>
+      
+      <guid>http://conrads.website/about/</guid>
+      <description>
+
+&lt;p&gt;Hello! You&amp;rsquo;ve found my personal site. As one might assume, I fill it with personal things. I generate this static site with &lt;a href=&#34;gohugo.io&#34;&gt;Hugo&lt;/a&gt; rather than making it from scratch because &lt;em&gt;I hate reinventing the wheel.&lt;/em&gt; Though, I&amp;rsquo;ve also found that most &amp;ldquo;reinvented wheels&amp;rdquo; are born through a surprising lack of basic Googling&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;Anyway. Thanks for crawling over!&lt;/p&gt;
+
+&lt;h1 id=&#34;resume&#34;&gt;Resume&lt;/h1&gt;
+
+&lt;p&gt;(208)255-9280 - conradmearns@gmail.com - mear8979@vandals.uidaho.edu&lt;/p&gt;
+
+&lt;h1 id=&#34;professional-profile&#34;&gt;Professional Profile&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Junior Standing (GPA 3.27)&lt;br /&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;CompTIA A+ certified&lt;/p&gt;
+
+&lt;h3 id=&#34;past-accomplishments&#34;&gt;Past Accomplishments&lt;/h3&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Student Body President (2013 - 2014)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Volunteer for Angels over Sandpoint&lt;/p&gt;
+
+&lt;h3 id=&#34;stuff-i-m-great-with&#34;&gt;Stuff I&amp;rsquo;m Great with&lt;/h3&gt;
+
+&lt;p&gt;C, Linux, Java&lt;/p&gt;
+
+&lt;h3 id=&#34;stuff-i-m-good-with&#34;&gt;Stuff I&amp;rsquo;m Good with&lt;/h3&gt;
+
+&lt;p&gt;C++, Python, the Git Toolchain&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;work-history&#34;&gt;Work History&lt;/h1&gt;
+
+&lt;h3 id=&#34;m2-construction-sandpoint-id&#34;&gt;M2 Construction - Sandpoint, ID&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Assisted with construction logistics and general carpentry&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Technical Support&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Customer Service&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;May 2016 - Present&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;staples-sandpoint-id&#34;&gt;Staples - Sandpoint, ID&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Assisted with Copy and Print center, Easy Tech, and customer service&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;August, 2015 - December 2015&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;xcraft-sandpoint-id&#34;&gt;XCraft - Sandpoint, ID&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Utilized Solidworks for developing new products&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Designed and built equipment to assist product assembly and logistics&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;June, 2015 - August 2015&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;education&#34;&gt;Education&lt;/h1&gt;
+
+&lt;h3 id=&#34;bs-computer-science&#34;&gt;BS Computer Science&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;University of Idaho&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Expected graduation &lt;sup&gt;2020&lt;/sup&gt;&amp;frasl;&lt;sub&gt;2021&lt;/sub&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;high-school-diploma&#34;&gt;High School Diploma&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Forrest M. Bird Charter School&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Graduated June 2016&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Pompous</title>
@@ -154,6 +241,27 @@ On ideas that don&amp;rsquo;t matter&lt;br /&gt;
 A thought crosses my mind&lt;br /&gt;
 And here it will hide&lt;br /&gt;
 To stay forever after&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What to Expect Here</title>
+      <link>http://conrads.website/posts/expectations/</link>
+      <pubDate>Sat, 05 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://conrads.website/posts/expectations/</guid>
+      <description>&lt;p&gt;In all honesty, few processes of my head are consistent. That being said&amp;hellip;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I do write poetry more often than other things, so expect more of that.&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;By having a blog readily available, I might actually contribute&amp;hellip;&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;There&amp;rsquo;s a lot of Computer Science topics that I want to share.&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you&amp;rsquo;ve read my About page then you know that I don&amp;rsquo;t like reinventing wheels. But did you know that I&amp;rsquo;m also on Medium? ;)&lt;/p&gt;
+
+&lt;p&gt;Again, consistency is not a Conrad thing unless I document &lt;em&gt;everything&lt;/em&gt; about what I was thinking at the time. So I&amp;rsquo;ll probably be posting personal projects here too in case I ever want to go back to something.&lt;/p&gt;
 </description>
     </item>
     

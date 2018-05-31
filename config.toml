@@ -4,6 +4,10 @@ title = "Conrad's Website"
 theme = "Coder"
 publishDir = "docs"
 
+PygmentsCodeFences = true
+# PygmentsUseClasses = true
+PygmentsStyle = "monokai"
+
 
 [params]
   author = "Conrad Mearns"

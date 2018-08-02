@@ -6,8 +6,287 @@
     <description>Recent content in Posts on Conrad&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 May 2018 23:04:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Aug 2018 16:17:00 +0000</lastBuildDate>
     <atom:link href="http://conrads.website/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Mathematical Seashells</title>
+      <link>http://conrads.website/posts/seashells/</link>
+      <pubDate>Wed, 01 Aug 2018 16:17:00 +0000</pubDate>
+      
+      <guid>http://conrads.website/posts/seashells/</guid>
+      <description>
+
+&lt;p&gt;In &lt;a href=&#34;http://www.mat.uc.pt/~picado/conchas/eng/article.pdf&#34;&gt;Seashells: The Plainness and Beauty of their Mathematical Description&lt;/a&gt;, Jorge Picado describes the mathematics necessary to simulate the shape of a multitude of different seashells. In this post, I wanted to share some renders I created while implementing Picado&amp;rsquo;s math into &lt;a href=&#34;https://github.com/scenerygraphics/sciview&#34;&gt;SciView&lt;/a&gt; and how the fourteen parameters function.&lt;/p&gt;
+
+&lt;h2 id=&#34;defining-the-spiral&#34;&gt;Defining the Spiral&lt;/h2&gt;
+
+&lt;p&gt;The parameters &lt;code&gt;D&lt;/code&gt;, &lt;code&gt;A&lt;/code&gt;, &lt;code&gt;alpha&lt;/code&gt; and &lt;code&gt;beta&lt;/code&gt; allow us to construct any variety of spiral we want.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;D&lt;/code&gt; specifies the chirality of the seashell - which direction it spirals.&lt;br /&gt;
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;D1A50alpha85beta10.png&#34; alt=&#34;Counterclockwise (D = 1)&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        Counterclockwise (D = 1)
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;br /&gt;
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;D-1A50alpha85beta10.png&#34; alt=&#34;Clockwise (D = -1)&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        Clockwise (D = -1)
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;A&lt;/code&gt; determines how far the beginning of the spiral is from the center of rotation, although it also manifests itself into determining how the diameter changes in size. It&amp;rsquo;s hard to see, but here is the same shell as above, with a smaller &lt;code&gt;A&lt;/code&gt; value.&lt;br /&gt;
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;D1A10alpha85beta10.png&#34; alt=&#34;(A = 10)&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        (A = 10)
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;alpha&lt;/code&gt; is thankfully (a little) more straightforward. This value is the angle between a line drawn from the center of the spiral to any point on the surface, and the tangent at the point on the surface. In other words, it specifies the rate of spiraling.&lt;br /&gt;
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;alpha85.png&#34; alt=&#34;(alpha = 85 degrees)&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        (alpha = 85 degrees)
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;br /&gt;
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;alpha80.png&#34; alt=&#34;(alpha = 80 degrees)&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        (alpha = 80 degrees)
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;br /&gt;
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;alpha70.png&#34; alt=&#34;(alpha = 70 degrees)&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        (alpha = 70 degrees)
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;br /&gt;
+This means that an angle of 90 degrees should create a circle (or a torus for this example)&lt;br /&gt;
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;alpha90.png&#34; alt=&#34;(alpha = 90 degrees)&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        (alpha = 90 degrees)
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;beta&lt;/code&gt; is even more simple than &lt;code&gt;alpha&lt;/code&gt;. &lt;code&gt;beta&lt;/code&gt; is the angle between the axis of rotation and the edge of the generating spiral. Here is the same spiral, but with varrying values of &lt;code&gt;beta&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;beta5.png&#34; alt=&#34;(beta = 5 degrees)&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        (beta = 5 degrees)
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;br /&gt;
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;beta10.png&#34; alt=&#34;(beta = 10 degrees)&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        (beta = 10 degrees)
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;br /&gt;
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;beta20.png&#34; alt=&#34;(beta = 20 degrees)&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        (beta = 20 degrees)
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&#34;making-shells&#34;&gt;Making Shells&lt;/h2&gt;
+
+&lt;p&gt;The above spirals, while still shells, are very thin on purpose. However, while they show the underlying spiral simply, they can&amp;rsquo;t represent most seashells on their own. To do this, we must introduce an ellipse that will fill the space. This generating curve can be any shape, but for now it remains an ellipse.&lt;/p&gt;
+
+&lt;p&gt;Defining the ellipse is done with two new variables &lt;code&gt;a&lt;/code&gt; and &lt;code&gt;b&lt;/code&gt; - the radii of the ellipse.&lt;br /&gt;
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;shell1.png&#34; alt=&#34;(a = 15 | b = 15)&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        (a = 15 | b = 15)
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Now that&amp;rsquo;s a seashell! What happens when &lt;code&gt;a&lt;/code&gt; and &lt;code&gt;b&lt;/code&gt; change though?&lt;br /&gt;
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;shell2.png&#34; alt=&#34;(a = 5 | b = 15)&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        (a = 5 | b = 15)
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;br /&gt;
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;shell3.png&#34; alt=&#34;(a = 15 | b = 5)&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        (a = 15 | b = 5)
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Yea the last one looks messed up, but the first one looks like it could pass as a real shell!&lt;/p&gt;
+
+&lt;h2 id=&#34;bonus-shell&#34;&gt;Bonus Shell&lt;/h2&gt;
+
+&lt;p&gt;At this point I surrender myself to the hour, and finish this post for now. In the meantime, here&amp;rsquo;s something cool to look at.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;neat.png&#34; alt=&#34;(only Gabbar Singh knows what the parameters were now)&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        (only Gabbar Singh knows what the parameters were now)
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+</description>
+    </item>
     
     <item>
       <title>In Stone</title>

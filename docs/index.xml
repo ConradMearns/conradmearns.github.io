@@ -6,8 +6,287 @@
     <description>Recent content on Conrad&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Jul 2018 14:23:04 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 01 Aug 2018 16:17:00 +0000</lastBuildDate>
     <atom:link href="http://conrads.website/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Mathematical Seashells</title>
+      <link>http://conrads.website/posts/seashells/</link>
+      <pubDate>Wed, 01 Aug 2018 16:17:00 +0000</pubDate>
+      
+      <guid>http://conrads.website/posts/seashells/</guid>
+      <description>
+
+&lt;p&gt;In &lt;a href=&#34;http://www.mat.uc.pt/~picado/conchas/eng/article.pdf&#34;&gt;Seashells: The Plainness and Beauty of their Mathematical Description&lt;/a&gt;, Jorge Picado describes the mathematics necessary to simulate the shape of a multitude of different seashells. In this post, I wanted to share some renders I created while implementing Picado&amp;rsquo;s math into &lt;a href=&#34;https://github.com/scenerygraphics/sciview&#34;&gt;SciView&lt;/a&gt; and how the fourteen parameters function.&lt;/p&gt;
+
+&lt;h2 id=&#34;defining-the-spiral&#34;&gt;Defining the Spiral&lt;/h2&gt;
+
+&lt;p&gt;The parameters &lt;code&gt;D&lt;/code&gt;, &lt;code&gt;A&lt;/code&gt;, &lt;code&gt;alpha&lt;/code&gt; and &lt;code&gt;beta&lt;/code&gt; allow us to construct any variety of spiral we want.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;D&lt;/code&gt; specifies the chirality of the seashell - which direction it spirals.&lt;br /&gt;
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;D1A50alpha85beta10.png&#34; alt=&#34;Counterclockwise (D = 1)&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        Counterclockwise (D = 1)
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;br /&gt;
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;D-1A50alpha85beta10.png&#34; alt=&#34;Clockwise (D = -1)&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        Clockwise (D = -1)
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;A&lt;/code&gt; determines how far the beginning of the spiral is from the center of rotation, although it also manifests itself into determining how the diameter changes in size. It&amp;rsquo;s hard to see, but here is the same shell as above, with a smaller &lt;code&gt;A&lt;/code&gt; value.&lt;br /&gt;
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;D1A10alpha85beta10.png&#34; alt=&#34;(A = 10)&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        (A = 10)
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;alpha&lt;/code&gt; is thankfully (a little) more straightforward. This value is the angle between a line drawn from the center of the spiral to any point on the surface, and the tangent at the point on the surface. In other words, it specifies the rate of spiraling.&lt;br /&gt;
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;alpha85.png&#34; alt=&#34;(alpha = 85 degrees)&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        (alpha = 85 degrees)
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;br /&gt;
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;alpha80.png&#34; alt=&#34;(alpha = 80 degrees)&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        (alpha = 80 degrees)
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;br /&gt;
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;alpha70.png&#34; alt=&#34;(alpha = 70 degrees)&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        (alpha = 70 degrees)
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;br /&gt;
+This means that an angle of 90 degrees should create a circle (or a torus for this example)&lt;br /&gt;
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;alpha90.png&#34; alt=&#34;(alpha = 90 degrees)&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        (alpha = 90 degrees)
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;beta&lt;/code&gt; is even more simple than &lt;code&gt;alpha&lt;/code&gt;. &lt;code&gt;beta&lt;/code&gt; is the angle between the axis of rotation and the edge of the generating spiral. Here is the same spiral, but with varrying values of &lt;code&gt;beta&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;
+&lt;figure &gt;
+    
+        &lt;img src=&#34;beta5.png&#34; alt=&#34;(beta = 5 degrees)&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        (beta = 5 degrees)
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;br /&gt;
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;beta10.png&#34; alt=&#34;(beta = 10 degrees)&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        (beta = 10 degrees)
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;br /&gt;
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;beta20.png&#34; alt=&#34;(beta = 20 degrees)&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        (beta = 20 degrees)
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&#34;making-shells&#34;&gt;Making Shells&lt;/h2&gt;
+
+&lt;p&gt;The above spirals, while still shells, are very thin on purpose. However, while they show the underlying spiral simply, they can&amp;rsquo;t represent most seashells on their own. To do this, we must introduce an ellipse that will fill the space. This generating curve can be any shape, but for now it remains an ellipse.&lt;/p&gt;
+
+&lt;p&gt;Defining the ellipse is done with two new variables &lt;code&gt;a&lt;/code&gt; and &lt;code&gt;b&lt;/code&gt; - the radii of the ellipse.&lt;br /&gt;
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;shell1.png&#34; alt=&#34;(a = 15 | b = 15)&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        (a = 15 | b = 15)
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Now that&amp;rsquo;s a seashell! What happens when &lt;code&gt;a&lt;/code&gt; and &lt;code&gt;b&lt;/code&gt; change though?&lt;br /&gt;
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;shell2.png&#34; alt=&#34;(a = 5 | b = 15)&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        (a = 5 | b = 15)
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;br /&gt;
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;shell3.png&#34; alt=&#34;(a = 15 | b = 5)&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        (a = 15 | b = 5)
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Yea the last one looks messed up, but the first one looks like it could pass as a real shell!&lt;/p&gt;
+
+&lt;h2 id=&#34;bonus-shell&#34;&gt;Bonus Shell&lt;/h2&gt;
+
+&lt;p&gt;At this point I surrender myself to the hour, and finish this post for now. In the meantime, here&amp;rsquo;s something cool to look at.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;neat.png&#34; alt=&#34;(only Gabbar Singh knows what the parameters were now)&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        (only Gabbar Singh knows what the parameters were now)
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+</description>
+    </item>
     
     <item>
       <title>Old Snow</title>
@@ -321,150 +600,23 @@ Misinformation for the dumb and half wits&lt;/p&gt;
     </item>
     
     <item>
-      <title>Pompous</title>
-      <link>http://conrads.website/poems/pompous/</link>
-      <pubDate>Sat, 05 May 2018 17:02:44 -0700</pubDate>
+      <title>What to Expect Here</title>
+      <link>http://conrads.website/posts/expectations/</link>
+      <pubDate>Sat, 05 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://conrads.website/poems/pompous/</guid>
-      <description>&lt;p&gt;I am my own&lt;br /&gt;
-That&amp;rsquo;s all that I can be&lt;br /&gt;
-To try and find the truth?&lt;br /&gt;
-Such a task seems necessary&lt;br /&gt;
-But dig too deep&lt;br /&gt;
-Extrapolate too freely&lt;br /&gt;
-Your truths become indescribable&lt;br /&gt;
-As they separate from reality&lt;/p&gt;
+      <guid>http://conrads.website/posts/expectations/</guid>
+      <description>&lt;p&gt;In all honesty, few processes of my head are consistent. That being said&amp;hellip;&lt;/p&gt;
 
-&lt;p&gt;An old man told truth to the young,&lt;br /&gt;
-You must be kind&lt;br /&gt;
-Leave your hatred and quarrels behind&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I do write poetry more often than other things, so expect more of that.&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;By having a blog readily available, I might actually contribute&amp;hellip;&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;There&amp;rsquo;s a lot of Computer Science topics that I want to share.&lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Others say all who are born,&lt;br /&gt;
-Get what they deserve&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;ve read my About page then you know that I don&amp;rsquo;t like reinventing wheels. But did you know that I&amp;rsquo;m also on Medium? ;)&lt;/p&gt;
 
-&lt;p&gt;But the truth of mother nature?&lt;br /&gt;
-The truth of father time?&lt;br /&gt;
-They are too blind&lt;br /&gt;
-They lack our spines&lt;br /&gt;
-But they gave us ours&lt;br /&gt;
-made jester hats of our hearts&lt;br /&gt;
-Wasted our empathy on the meek&lt;br /&gt;
-While the truth that we seek&lt;br /&gt;
-Distances itself while continue to dig deep&lt;/p&gt;
-
-&lt;p&gt;You don&amp;rsquo;t understand&lt;br /&gt;
-As it is, you can&amp;rsquo;t understand&lt;br /&gt;
-Because as it is&lt;br /&gt;
-There is nothing to understand&lt;br /&gt;
-When you wake&lt;br /&gt;
-If you wake&lt;br /&gt;
-You&amp;rsquo;ll find that your music is white noise&lt;br /&gt;
-past your eyelids there is nothing to be seen&lt;br /&gt;
-And there&amp;rsquo;s nothing but vagueries behind your voice&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Awake</title>
-      <link>http://conrads.website/poems/awake/</link>
-      <pubDate>Sat, 05 May 2018 16:58:28 -0700</pubDate>
-      
-      <guid>http://conrads.website/poems/awake/</guid>
-      <description>&lt;p&gt;The storm rolls through&lt;br /&gt;
-we pick up the broken branches&lt;br /&gt;
-the pieces of our lives&lt;br /&gt;
-our crushed dreams&lt;br /&gt;
-and we move on.&lt;/p&gt;
-
-&lt;p&gt;Disasters rarely come in twos&lt;br /&gt;
-rarely do they come in threes&lt;br /&gt;
-they come as the torrent&lt;br /&gt;
-against a young heart&lt;br /&gt;
-battered to agelessness&lt;/p&gt;
-
-&lt;p&gt;I begin my morning with a sunset&lt;br /&gt;
-I clear the smoke with incense&lt;br /&gt;
-I dance because I am watching&lt;br /&gt;
-I cry because I&amp;rsquo;m just as helpless as anyone&lt;br /&gt;
-but I can&amp;rsquo;t turn off the radio&lt;/p&gt;
-
-&lt;p&gt;And we wonder why god rested on the sabbath.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>River</title>
-      <link>http://conrads.website/poems/river/</link>
-      <pubDate>Sat, 05 May 2018 16:57:13 -0700</pubDate>
-      
-      <guid>http://conrads.website/poems/river/</guid>
-      <description>&lt;p&gt;My head is a river&lt;br /&gt;
-But it&amp;rsquo;s filled up with blood&lt;br /&gt;
-Overfilling the turns and bends&lt;br /&gt;
-Until something new restarts the flood&lt;br /&gt;
-And now I can&amp;rsquo;t feel anymore&lt;br /&gt;
-No now, I don&amp;rsquo;t feel anything anymore&lt;br /&gt;
-Until the flood comes and knock me off me feet&lt;br /&gt;
-Sweeps me to yet another defeat&lt;br /&gt;
-Where my heart and my head wish that they were both dead&lt;br /&gt;
-And my body can peacefully swim along&lt;br /&gt;
-Until all of the pain is gone&lt;/p&gt;
-
-&lt;p&gt;My head is a river&lt;br /&gt;
-And now the flood settles&lt;br /&gt;
-And I can&amp;rsquo;t find my favorite places anymore&lt;br /&gt;
-They&amp;rsquo;ve been erased, rewritten, ignored&lt;br /&gt;
-But as long as I stay on this river&lt;br /&gt;
-And do t get stuck in some oxbow&lt;br /&gt;
-I&amp;rsquo;ll be safe, free, and you&amp;rsquo;ll know&lt;br /&gt;
-After I spend some time letting blood go&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>I Could...</title>
-      <link>http://conrads.website/poems/i_could/</link>
-      <pubDate>Sat, 05 May 2018 16:54:44 -0700</pubDate>
-      
-      <guid>http://conrads.website/poems/i_could/</guid>
-      <description>&lt;p&gt;I could let you be mine&lt;br /&gt;
-keep your heart wrapped up in my broken mind&lt;br /&gt;
-I could give you gifts and words of love&lt;br /&gt;
-To prove my worth exists far above&lt;br /&gt;
-Expectations You once had&lt;br /&gt;
-That fell apart once life with others got bad&lt;br /&gt;
-I can provide comfort, I can mend wounds&lt;br /&gt;
-I can keep us tethered, me and you&lt;br /&gt;
-And when I soar, you may lose&lt;br /&gt;
-As dependence on me develops a bruise on you&lt;br /&gt;
-You&amp;rsquo;ll realize the knot I tied was really a noose&lt;br /&gt;
-And I&amp;rsquo;ll come crashing down, along with you too&lt;br /&gt;
-And the reasons to stay? They become too few&lt;br /&gt;
-We will be destroyed, and will need to start anew&lt;br /&gt;
-And i know but only one thing&lt;br /&gt;
-your life would be better if I restarted&lt;br /&gt;
-Without&lt;br /&gt;
-You&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Chatter</title>
-      <link>http://conrads.website/poems/chatter/</link>
-      <pubDate>Sat, 05 May 2018 16:25:58 -0700</pubDate>
-      
-      <guid>http://conrads.website/poems/chatter/</guid>
-      <description>&lt;p&gt;Digital chit chatter&lt;br /&gt;
-Wired rant and banter&lt;br /&gt;
-A conflict comes&lt;br /&gt;
-A conflict goes&lt;br /&gt;
-And my solution arrives after&lt;/p&gt;
-
-&lt;p&gt;Digital chit chatter&lt;br /&gt;
-On ideas that don&amp;rsquo;t matter&lt;br /&gt;
-A thought crosses my mind&lt;br /&gt;
-And here it will hide&lt;br /&gt;
-To stay forever after&lt;/p&gt;
+&lt;p&gt;Again, consistency is not a Conrad thing unless I document &lt;em&gt;everything&lt;/em&gt; about what I was thinking at the time. So I&amp;rsquo;ll probably be posting personal projects here too in case I ever want to go back to something.&lt;/p&gt;
 </description>
     </item>
     

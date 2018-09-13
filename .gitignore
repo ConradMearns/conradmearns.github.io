@@ -1,2 +1,3 @@
-# Ignore all markdown, keep private 
+# Ignore all markdown, keep private
 *.md
+*.md~

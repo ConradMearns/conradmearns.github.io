@@ -22,6 +22,11 @@ PygmentsStyle = "monokai"
   weight = 1
   url = "https://github.com/Conradmearns"
 
+[[params.social]]
+  name = "PGP"
+  weight = 2
+  url = "https://raw.githubusercontent.com/ConradMearns/website/master/conrad.key"
+
 [[menu.main]]
   name = "Blog"
   weight = 2

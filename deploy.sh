@@ -16,3 +16,6 @@ done
 
 #Build
 hugo
+
+#Remove double encrypted FILES
+# find docs/ -name "*.enc" -type f -delete

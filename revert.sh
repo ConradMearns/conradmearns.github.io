@@ -10,6 +10,6 @@ for file in $FILES ; do
 	#echo $file - $dir$trunc
 	gpg --batch --yes --armor --output $dir/$trunc.md --decrypt $file
 
-	rm -f $file
+	# rm -f $file
 done
 #hugo

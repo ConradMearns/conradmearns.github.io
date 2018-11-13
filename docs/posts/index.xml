@@ -6,8 +6,180 @@
     <description>Recent content in Posts on Conrad&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Aug 2018 16:17:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Nov 2018 09:51:29 -0800</lastBuildDate>
     <atom:link href="http://conrads.website/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>More Shells</title>
+      <link>http://conrads.website/posts/more-shells/</link>
+      <pubDate>Tue, 13 Nov 2018 09:51:29 -0800</pubDate>
+      
+      <guid>http://conrads.website/posts/more-shells/</guid>
+      <description>
+
+&lt;p&gt;Well I&amp;rsquo;ve been pretty busy recently, as the semester winds down the workload typically ramps up&amp;hellip; So it goes.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve been trying to find the time to write here more, and sometimes I have. It&amp;rsquo;s just that so many of my words end up being for me and me alone, and because of that this place continues to look empty&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;Well, to help fight the emptiness, here are some shell renders I did. I was asked to enter these in an image competition, but first I&amp;rsquo;m releasing them here under the &lt;a href=&#34;http://creativecommons.org/licenses/by/4.0/&#34;&gt;Creative Commons Attribution 4.0 International License&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;If you haven&amp;rsquo;t seen my other post about shells&lt;/strong&gt; then visit it, I talk a little bit about how they&amp;rsquo;re generated and link to the paper this is based off of.&lt;/p&gt;
+
+&lt;h2 id=&#34;turritella&#34;&gt;Turritella&lt;/h2&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;more-shells/turritella.png&#34; alt=&#34;(Turritella shell with random surface bumps)&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        (Turritella shell with random surface bumps)
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;h2 id=&#34;boat-ear-moon&#34;&gt;Boat Ear Moon&lt;/h2&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;more-shells/boatearmoon.png&#34; alt=&#34;(Boat Ear Moon shell with random surface bumps)&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        (Boat Ear Moon shell with random surface bumps)
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;h2 id=&#34;ancilla&#34;&gt;Ancilla&lt;/h2&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;more-shells/ancilla.png&#34; alt=&#34;(Ancilla shell with random surface bumps)&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        (Ancilla shell with random surface bumps)
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;more-shells/ancilla2.png&#34; alt=&#34;(Ancilla shell without random surface bumps)&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        (Ancilla shell without random surface bumps)
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;h2 id=&#34;argonauta&#34;&gt;Argonauta&lt;/h2&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;more-shells/argonauta.png&#34; alt=&#34;(Argonauta shell with random surface bumps)&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        (Argonauta shell with random surface bumps)
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;more-shells/argonauta-normals.png&#34; alt=&#34;(Normal mapping of an Argonauta shell with random surface bumps)&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        (Normal mapping of an Argonauta shell with random surface bumps)
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;h2 id=&#34;precious-wentletrap&#34;&gt;Precious Wentletrap&lt;/h2&gt;
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;more-shells/preciouswentletrap-normals.png&#34; alt=&#34;(Normal mapping of a Precious Wentletrap shell with random surface bumps)&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        (Normal mapping of a Precious Wentletrap shell with random surface bumps)
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;more-shells/preciouswentletrap.png&#34; alt=&#34;(Low resolution Precious Wentletrap shell used for testing fractal dimension analysis)&#34; /&gt;
+    
+    
+    &lt;figcaption&gt;
+        &lt;p&gt;
+        (Low resolution Precious Wentletrap shell used for testing fractal dimension analysis)
+        
+            
+        
+        &lt;/p&gt; 
+    &lt;/figcaption&gt;
+    
+&lt;/figure&gt;
+
+</description>
+    </item>
     
     <item>
       <title>Mathematical Seashells</title>

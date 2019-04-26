@@ -1,25 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Conrad&#39;s Website</title>
-    <link>http://conrads.website/</link>
-    <description>Recent content on Conrad&#39;s Website</description>
+    <title>Poems on Conrad&#39;s Website</title>
+    <link>http://conrads.website/poems/</link>
+    <description>Recent content in Poems on Conrad&#39;s Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Aug 2018 16:17:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Jul 2018 14:23:04 -0700</lastBuildDate>
     
-	<atom:link href="http://conrads.website/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://conrads.website/poems/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Mathematical Seashells</title>
-      <link>http://conrads.website/posts/seashells/</link>
-      <pubDate>Wed, 01 Aug 2018 16:17:00 +0000</pubDate>
-      
-      <guid>http://conrads.website/posts/seashells/</guid>
-      <description>In Seashells: The Plainness and Beauty of their Mathematical Description, Jorge Picado describes the mathematics necessary to simulate the shape of a multitude of different seashells. In this post, I wanted to share some renders I created while implementing Picado&amp;rsquo;s math into SciView and how the fourteen parameters function.
-Defining the Spiral The parameters D, A, alpha and beta allow us to construct any variety of spiral we want.</description>
-    </item>
     
     <item>
       <title>Old Snow</title>
@@ -164,52 +154,6 @@ Lower</description>
       
       <guid>http://conrads.website/poems/asleep/</guid>
       <description>&amp;ldquo;It&amp;rsquo;s easy to write your thoughts down that way&amp;rdquo; So said the speaker - a very extroverted creature, a conversational exhibitionist with cosmic quandaries boiled down to aether, we spoke but mostly he talked - I said nothing, I wouldn&amp;rsquo;t want my spirits eradicated either. To live in the mind is to live blind - my eyes tied at the lid, tied to the skies were my mysteries hid, how easily could they shatter if I left procrastination for another matter.</description>
-    </item>
-    
-    <item>
-      <title>In Stone</title>
-      <link>http://conrads.website/posts/stone/</link>
-      <pubDate>Wed, 30 May 2018 23:04:00 +0000</pubDate>
-      
-      <guid>http://conrads.website/posts/stone/</guid>
-      <description>I always find myself here. Laying in bed, waiting for the day to roll over as I do. Twisting and turning, I can never find the right position to begin falling asleep. Though my eyes can barely lift their lids, my head isn&amp;rsquo;t ready to call it quits - for today that is.
-I always find myself here. Fingers on keys, eyes on the screen, though it keeps burning. I write my stream of thoughts into ones and zeros, kept understandable by the unicode standard (at least a little).</description>
-    </item>
-    
-    <item>
-      <title>About &#39;Conrad Mearns&#39;</title>
-      <link>http://conrads.website/about/</link>
-      <pubDate>Sat, 05 May 2018 17:06:01 -0700</pubDate>
-      
-      <guid>http://conrads.website/about/</guid>
-      <description>Hello! You&amp;rsquo;ve found my personal site. As one might assume, I fill it with personal things. I generate this static site with Hugo rather than making it from scratch because I hate reinventing the wheel. Though, I&amp;rsquo;ve also found that most &amp;ldquo;reinvented wheels&amp;rdquo; are born through a surprising lack of basic Googling&amp;hellip;
-Anyway. Thanks for crawling over!
-Resume (208)255-9280 - conradmearns@gmail.com - mear8979@vandals.uidaho.edu
-Professional Profile  Junior Standing (GPA 3.</description>
-    </item>
-    
-    <item>
-      <title>What to Expect Here</title>
-      <link>http://conrads.website/posts/expectations/</link>
-      <pubDate>Sat, 05 May 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://conrads.website/posts/expectations/</guid>
-      <description>In all honesty, few processes of my head are consistent. That being said&amp;hellip;
- I do write poetry more often than other things, so expect more of that.
- By having a blog readily available, I might actually contribute&amp;hellip;
- There&amp;rsquo;s a lot of Computer Science topics that I want to share.
-  If you&amp;rsquo;ve read my About page then you know that I don&amp;rsquo;t like reinventing wheels. But did you know that I&amp;rsquo;m also on Medium?</description>
-    </item>
-    
-    <item>
-      <title>Technical Writing Portfolio</title>
-      <link>http://conrads.website/eng/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://conrads.website/eng/</guid>
-      <description> Welcome to my online portfolio. On this page you&amp;rsquo;ll find my videos from English 317 Technical Writing Class.
-Elsewhere on this website, you&amp;rsquo;ll find my resume, public PGP key, different posts of projects, and some poems.
-Fractal Dimensionality   Tesla: Hidden Costs and Bonuses   Comparing i3 and awesome   </description>
     </item>
     
   </channel>

@@ -3,12 +3,85 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://conrads.website/posts/seashells/</loc>
+    <lastmod>2018-08-01T16:17:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://conrads.website/poems/old_snow/</loc>
+    <lastmod>2018-07-19T14:23:04-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://conrads.website/poems/repeat/</loc>
+    <lastmod>2018-07-19T14:20:55-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://conrads.website/poems/destined/</loc>
+    <lastmod>2018-07-19T14:19:56-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://conrads.website/poems/gold_tinted_glass/</loc>
+    <lastmod>2018-07-19T14:15:50-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://conrads.website/poems/beautiful/</loc>
+    <lastmod>2018-07-19T14:15:20-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://conrads.website/poems/next/</loc>
+    <lastmod>2018-07-19T14:13:42-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://conrads.website/poems/change/</loc>
+    <lastmod>2018-07-19T14:11:51-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://conrads.website/poems/asleep/</loc>
+    <lastmod>2018-07-18T21:19:15-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://conrads.website/posts/stone/</loc>
+    <lastmod>2018-05-30T23:04:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://conrads.website/about/</loc>
+    <lastmod>2018-05-05T17:06:01-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://conrads.website/posts/expectations/</loc>
+    <lastmod>2018-05-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://conrads.website/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://conrads.website/</loc>
+    <lastmod>2018-08-01T16:17:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://conrads.website/poems/</loc>
+    <lastmod>2018-07-19T14:23:04-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://conrads.website/posts/</loc>
+    <lastmod>2018-08-01T16:17:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

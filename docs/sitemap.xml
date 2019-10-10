@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://conrads.website/</loc>
+    <lastmod>2018-11-23T23:22:29-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://conrads.website/posts/</loc>
+    <lastmod>2018-11-23T23:22:29-08:00</lastmod>
+  </url>
   
   <url>
     <loc>http://conrads.website/posts/cluster/</loc>
     <lastmod>2018-11-23T23:22:29-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://conrads.website/posts/whattomorrowholds/</loc>
+    <lastmod>2018-11-18T21:12:56-08:00</lastmod>
   </url>
   
   <url>
@@ -22,51 +38,6 @@
   </url>
   
   <url>
-    <loc>http://conrads.website/poems/old_snow/</loc>
-    <lastmod>2018-07-19T14:23:04-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://conrads.website/poems/pawn/</loc>
-    <lastmod>2018-07-19T14:22:39-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://conrads.website/poems/repeat/</loc>
-    <lastmod>2018-07-19T14:20:55-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://conrads.website/poems/destined/</loc>
-    <lastmod>2018-07-19T14:19:56-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://conrads.website/poems/gold_tinted_glass/</loc>
-    <lastmod>2018-07-19T14:15:50-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://conrads.website/poems/beautiful/</loc>
-    <lastmod>2018-07-19T14:15:20-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://conrads.website/poems/next/</loc>
-    <lastmod>2018-07-19T14:13:42-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://conrads.website/poems/change/</loc>
-    <lastmod>2018-07-19T14:11:51-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://conrads.website/poems/asleep/</loc>
-    <lastmod>2018-07-18T21:19:15-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://conrads.website/posts/stone/</loc>
     <lastmod>2018-05-30T23:04:00+00:00</lastmod>
   </url>
@@ -77,21 +48,11 @@
   </url>
   
   <url>
-    <loc>http://conrads.website/</loc>
-    <lastmod>2018-11-23T23:22:29-08:00</lastmod>
-    <priority>0</priority>
+    <loc>http://conrads.website/categories/</loc>
   </url>
   
   <url>
-    <loc>http://conrads.website/poems/</loc>
-    <lastmod>2018-07-19T14:23:04-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://conrads.website/posts/</loc>
-    <lastmod>2018-11-23T23:22:29-08:00</lastmod>
-    <priority>0</priority>
+    <loc>http://conrads.website/tags/</loc>
   </url>
   
 </urlset>

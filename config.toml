@@ -38,11 +38,6 @@ PygmentsStyle = "monokai"
   url = "/posts/"
 
 [[menu.main]]
-  name = "Poems"
-  weight = 3
-  url = "/poems/"
-
-[[menu.main]]
   name = "Resume"
   weight = 1
   url = "/about/"

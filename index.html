@@ -1,91 +1,132 @@
 <!DOCTYPE html>
 <html lang="en-us">
+    <head>
+        <title>
+            Conrad's Website
+        </title>
+        <style>
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="author" content="Conrad Mearns">
-    
-    <meta name="keywords" content="conrad, mearns, blog">
-
-    <base href="http://conrads.website/">
-    <title>Conrad&#39;s Website</title>
-
-    <link rel="canonical" href="http://conrads.website/">
-
-    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
-    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
-    <link rel="stylesheet" href="http://conrads.website/css/style.min.css">
-
-    <link rel="icon" type="image/png" href="http://conrads.website/images/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="http://conrads.website/images/favicon-16x16.png" sizes="16x16">
-
-    
-      <link href="http://conrads.website/index.xml" rel="alternate" type="application/rss+xml" title="Conrad&#39;s Website" />
-      <link href="http://conrads.website/index.xml" rel="feed" type="application/rss+xml" title="Conrad&#39;s Website" />
-    
-
-    <meta name="generator" content="Hugo 0.58.3" />
-  </head>
-
-  <body>
-    <main class="wrapper">
-      <nav class="navigation">
-  <section class="container">
-    <a class="navigation-title" href="http://conrads.website/">
-      Conrad&#39;s Website
-    </a>
-    
-    <ul class="navigation-list float-right">
-      
-      <li class="navigation-item">
-        <a class="navigation-link" href="/about/">Resume</a>
-      </li>
-      
-      <li class="navigation-item">
-        <a class="navigation-link" href="/posts/">Blog</a>
-      </li>
-      
-    </ul>
-    
-  </section>
-</nav>
+            :root {
+                --bg:            #1D4E6D;
+                --fg:            #D8D8D8;
+                --accent-white:  #FFFFFF;
+                --accent-orange: #EFC090;
+                --accent-red:    #D25252;
+                --accent-green:  #9CDD80;
+                --accent-yellow: #CCDF32;
+                --accent-blue:   #79ABFF;
+            }
 
 
-      <div class="content">
-        
-  <section class="container centered">
-  <div class="about">
-    <h1>Conrad Mearns</h1>
-    <h2>Student at the University of Idaho</h2>
-    
-    <ul>
-      
-      <li><a href="https://github.com/Conradmearns">Github</a></li>
-      
-      <li><a href="https://raw.githubusercontent.com/ConradMearns/website/master/conrad.key">PGP</a></li>
-      
-      <li><a href="https://twitter.com/conrad_mearns">Twitter</a></li>
-      
-    </ul>
-    
-  </div>
-</section>
+            * {
+                padding: 0;
+                margin: 0;
+                font-size: 1em;
+            }
 
+            body {
+                background-color: var(--bg);
+                font-family: Verdana, sans-serif;
+            }
 
-      </div>
+            main {
+                margin: 20px auto;
+                padding: 42px 80px;
+                max-width: 600px;
+                color: var(--fg);
+                border: 1px dotted var(--accent-blue);
+            }
 
-      <footer class="footer">
-  <section class="container">
-    © 2018 · Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
-  </section>
-</footer>
+            h1 {
+                font-family: monospace;
+                font-weight: 100;
+                font-size: 4em;
+                color: var(--accent-white);
+                padding-bottom: 80px;
+                display: inline;;
+            }
 
-    </main>
+            h2 {
+                font-family: monospace;
+                font-weight: 100;
+                font-size: 1.2em;
+                font-style: italic;
+                color: var(--accent-white);
+            }
 
-    
+            p {
+                line-height: 1.5em;
+                margin-top: 20px;
+                display: block;
+            }
 
-  </body>
+            a {
+                font-size: 1.2em;
+                font-family: monospace;
+                color: var(--accent-orange);
+                text-decoration: none;
+            }
 
+            @media (max-width: 600px) {
+                main {
+                    max-width: 600px;
+                    padding: 20px;
+                }   
+            }
+
+            blockquote {
+                border-left: 4px solid var(--accent-blue);
+                margin: 1.5em 10px;
+                padding: 0.5em 10px;
+            }
+            blockquote:before {
+                color: var(--accent-orange);
+                content: open-quote;
+                font-size: 2em;
+                line-height: 0.1em;
+                margin-right: 0.25em;
+                vertical-align: -0.4em;
+            }
+
+            .right {
+                text-align: right;
+            }
+        </style>
+
+    </head>
+    <body>
+        <main>
+            <h1>Conrad Mearns</h1>
+            <h2 class="right">Computer Science @ the University of Idaho</h2>
+
+            <p>
+                <a href="https://github.com/ConradMearns">github.com/ConradMearns</a>
+                <br>
+                <a href="https://twitter.com/conrad_mearns">@conrad_mearns</a>
+                <br>
+                <a href="resumes/conrad_resume-consolas_2019.pdf">Resume 2019</a>
+            </p>                
+
+            <p>
+                I still haven't found the best way to carve a space for myself here, a place to put ramblings and ideas, links and bookmarks and viedos.
+                All of the things I want to share to my future selves, and to you.I was recently inspired to redo this site after reading 
+                <a href="https://jeffhuang.com/designed_to_last/">Jeff Huang's This Page is Designed to Last</a>.
+            </p>
+
+            <p>
+                At some point, I will devise a plan to add all of the links of things I enjoy here, for my and your prosperity.
+                I will have my old blog posts and maybe some essays or ramblings here too.
+                If you want to know if something updates, check back, Tweet at me, or follow this site on Github.
+                (Maybe someday I'll experiment with making my own content management system into a PWA)
+                In lieu of any other content, here's one of my favorite quotes.
+            </p>
+
+            <blockquote>Pride will not owe, and self-love will not pay <br> Maxims and Moral Reflections, No. 356 <br> Duc de La Rochefoucauld</blockquote>
+
+            <!-- Do I wan't to embed a whole PDF right here? I haven't decided still -->
+            <!-- <iframe src="resumes/conrad_resume-consolas_2019.pdf" width="100%" height="700px"> -->
+            <!-- <p>This browser does not support PDFs. Please download the PDF to view it: <a href="resumes/conrad_resume-consolas_2019.pdf">Download PDF</a>.</p> -->
+            <!-- </iframe> -->
+        </main>
+    </body>
 </html>
